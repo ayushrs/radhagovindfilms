@@ -1,0 +1,344 @@
+<div id="header-container"></div>
+
+<script>
+    fetch("header.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("header-container").innerHTML = data;
+        })
+        .catch(error => console.error("Error loading header:", error));
+</script>
+        <!-- End Sidebar Modal -->
+
+        <!--Start Page Banner-->
+        <div class="page-banner-area bg-5 jarallax" data-jarallax='{"speed": 0.3}'>
+            <div class="container">
+                <div class="page-banner-content">
+                    <h1>Contact Us</h1>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--End Page Banner-->
+
+        <!--Start Contact Area-->
+        <div class="contact-area ptb-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="get-in-touch">
+                            <h2>Get In Touch</h2>
+                            <div class="contact-info-card">
+                                <div class="icon">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <h4>Phone</h4>
+                                <a href="tel:0884566477587">(088) 456 647 7587</a>
+                                <a href="tel:0884566465247">(088) 456 646 5247</a>
+                            </div>
+                            <div class="contact-info-card">
+                                <div class="icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <h4>Email</h4>
+                                <a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#f88e919c9597969d8cb89c9795999196d69b9795"><span class="__cf_email__" data-cfemail="27514e434a484942536743484a464e490944484a">[email&#160;protected]</span></a>
+                                <a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#adc5c8c1c1c2eddbc4c9c8c283cec2c0"><span class="__cf_email__" data-cfemail="761e131a1a1936001f1213195815191b">[email&#160;protected]</span></a>
+                            </div>
+                            <div class="contact-info-card">
+                                <div class="icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <h4>Address</h4>
+                                <span>176, Street Name, New York,</span>
+                                <span>NY 10014176, USA</span>
+                            </div>
+                            <div class="social-content">
+                                <ul>
+                                    <li><span>Follow us:</span></li>
+                                    <li>
+                                        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://linkedin.com/?lang=en" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://instagram.com/?lang=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="map-area">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12711295.912702927!2d-97.8942370839028!3d38.93897514662292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sbd!4v1654928837073!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Contact Area-->
+
+        <!--Start Contact Form Area-->
+        <div class="contact-form-area ptb-100 bg-f8f8f8">
+            <div class="container">
+                <div class="section-title">
+                    <span>We’re Ready To Help You</span>
+                    <h2>Leave A Message</h2>
+                </div>
+                <div class="contacts-form">
+                    <form id="contactForm">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="form-group">
+                                    <input type="text" name="name" placeholder="Name" id="name" class="form-control" required data-error="Please enter your name">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+            
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="form-group">
+                                    <input type="email" name="email" id="email" placeholder="Email" class="form-control" required data-error="Please enter your email">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+            
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="form-group">
+                                    <input type="text" name="phone_number" id="phone_number" placeholder="Number" required data-error="Please enter your number" class="form-control">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+            
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="form-group">
+                                    <input type="text" name="msg_subject" id="msg_subject" class="form-control" placeholder="Subject" required data-error="Please enter your subject">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+            
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <textarea name="message" class="form-control" placeholder="Message" id="message" cols="30" rows="6" required data-error="Write your message"></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input
+                                        name="gridCheck"
+                                        value="I agree to the terms and privacy policy."
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id="gridCheck"
+                                        required
+                                    >
+                                    <label class="form-check-label" for="gridCheck">
+                                        I agree to the <a href="terms-conditions.html">terms</a> and <a href="privacy-policy.html">privacy policy</a>
+                                    </label>
+                                    <div class="help-block with-errors gridCheck-error"></div>
+                                </div>
+                            </div>
+            
+                            <div class="col-lg-12 col-md-12">
+                                <button type="submit" class="default-btn">
+                                    <span>Send Message</span>
+                                    <i class="flaticon-right-arrow-2"></i>
+                                </button>
+                                <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--End Contact Form Area-->
+
+        <!--Start Footer Area-->
+        <div class="footer-area pt-100 pb-70">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-footer-widget logo-area">
+                            <div class="logo">
+                                <a href="index.html"><img src="assets/images/white-logo.png" alt="Image"></a>
+                            </div>
+                            <p>On the other hand, we denounce whteous indignation and dislike men wh beguiled and demoralized er hand, we denounce whteous indignation and dislike </p>
+                            <div class="social-content">
+                                <ul>
+                                    <li>
+                                        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://linkedin.com/?lang=en" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://instagram.com/?lang=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-footer-widget quick-links">
+                            <h3>Quick Links</h3>
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    <a href="about-us.html">About Us</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    <a href="works.html">Works</a>
+                                </li>
+                              
+                                <li>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    <a href="blog-grid.html">Blog</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    <a href="contact-us.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-footer-widget instagram-content">
+                            <h3>Instagram</h3>
+                            <div class="row g-0">
+                                <div class="col-4">
+                                    <div class="single-instagram-box">
+                                        <img src="assets/images/instagram/instagram-img-1.jpg" alt="Image">
+                                        <a href="https://instagram.com/?lang=en" target="_blank">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="single-instagram-box">
+                                        <img src="assets/images/instagram/instagram-img-2.jpg" alt="Image">
+                                        <a href="https://instagram.com/?lang=en" target="_blank">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="single-instagram-box">
+                                        <img src="assets/images/instagram/instagram-img-3.jpg" alt="Image">
+                                        <a href="https://instagram.com/?lang=en" target="_blank">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="single-instagram-box">
+                                        <img src="assets/images/instagram/instagram-img-4.jpg" alt="Image">
+                                        <a href="https://instagram.com/?lang=en" target="_blank">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="single-instagram-box">
+                                        <img src="assets/images/instagram/instagram-img-5.jpg" alt="Image">
+                                        <a href="https://instagram.com/?lang=en" target="_blank">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="single-instagram-box">
+                                        <img src="assets/images/instagram/instagram-img-6.jpg" alt="Image">
+                                        <a href="https://instagram.com/?lang=en" target="_blank">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-footer-widget get-in-touch">
+                            <h3>Get In Touch</h3>
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-phone"></i>
+                                    <span>Phone</span>
+                                    <a href="tel:0087648484">(008) 764 8484</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <span>Email</span>
+                                    <a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#7e161b121208171a1311113e19131f1712501d1113"><span class="__cf_email__" data-cfemail="cfa7aaa3a3b9a6aba2a0a08fa8a2aea6a3e1aca0a2">[email&#160;protected]</span></a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <span>Address</span>
+                                    <p>2750 Quadra Street Canada</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="shape">
+                    <img src="assets/images/instagram/shape.png" class="shape-1" alt="Image">
+                    <img src="assets/images/instagram/shape.png" class="shape-2" alt="Image">
+                </div>
+            </div>
+        </div>
+        <!--End Footer Area-->
+
+        <!--Start Copy Right Area-->
+        
+        <!--End Copy Right Area-->
+
+        <!-- Start Go Top Area -->
+        <div class="go-top">
+            <i class="fa-solid fa-arrow-turn-up"></i>
+            <i class="fa-solid fa-arrow-turn-up"></i>
+        </div>
+        <!-- End Go Top Area -->
+
+
+        <!-- Jquery js -->
+        <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery.min.js"></script>
+        <!-- Bootstrap bundle js -->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <!-- Meanmenu js -->
+        <script src="assets/js/jquery.meanmenu.js"></script>
+        <!-- Owl Carosel js -->
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <!-- Magnific popup js -->
+        <script src="assets/js/jquery.magnific-popup.js"></script>
+        <!-- Aos js -->
+        <script src="assets/js/aos.js"></script>
+        <!-- Parallax js -->
+        <script src="assets/js/parallax.min.js"></script>
+        <!-- Odometer js -->    
+        <script src="assets/js/odometer.min.js"></script>
+        <!-- Appear js -->  
+        <script src="assets/js/appear.min.js"></script> 
+        <!-- Form Validator js -->    
+        <script src="assets/js/form-validator.min.js"></script>
+        <!-- Contact Form Script js -->    
+        <script src="assets/js/contact-form-script.js"></script>
+        <!-- Ajaxchimp js -->    
+        <script src="assets/js/ajaxchimp.min.js"></script>
+        <!--Custom js-->
+        <script src="assets/js/custom.js"></script>
+    </body>
+
+<!-- Mirrored from templates.hibootstrap.com/vidmo/default/contact-us.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Dec 2024 07:32:24 GMT -->
+</html>
