@@ -7309,3 +7309,10 @@ Go To Top Style
   top: 93%;
 }
 /*# sourceMappingURL=style.css.map */
+
+.module, .module-small {
+  position: relative;
+  padding: 143px 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
